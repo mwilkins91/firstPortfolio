@@ -19,7 +19,7 @@
 		</header>
 	</section>
 	<nav>
-	<button><i class="fa fa-bars"></i> Menu</button>
+		<button><i class="fa fa-bars"></i> Menu</button>
 		<ul class="wrapper__small">
 			<li><a href="#aboutMe">About Me</a></li>
 			<li><a href="#projects">Projects</a></li>
@@ -33,10 +33,19 @@
 		</header>
 		<h3 class="wrapper__small">Mark Wilkins</h3>
 		<p class="wrapper__small subheading">Front-End Web Developer</p>
-		<img class="wrapper__small" src="./public/assets/mwilkins.jpg" alt="">
-		<p class="wrapper__small profile">Hey there, my name is Mark and I am a front-end web developer based in Toronto. I am skilled in developing dynamic data driven applications using React, Jquery, or Vanilla JavaScript. I work well under pressure, and I never fail to deliver high quality work as efficiently as possible.</p>
-		<p class="wrapper__small profile">I am seeking employment with a team that would benefit from the addition of my skillset, and allow me to continue to both hone my existing skills, as well as develop new ones.</p>
-
+		<div class="aboutContent">
+			<img class="wrapper__small" src="./public/assets/mwilkins.jpg" alt="">
+			<div class="text">
+				<p class="wrapper__small profile">Hey there, my name is Mark and I am a front-end web developer based in Toronto. I am skilled in developing dynamic data driven applications using React, Jquery, or Vanilla JavaScript. I work well under pressure, and I never fail to deliver high quality work as efficiently as possible.</p>
+				<p class="wrapper__small profile">I am seeking employment with a team that would benefit from the addition of my skillset, and allow me to continue to both hone my existing skills, as well as develop new ones.</p>
+				<p class="skills wrapper__small profile">
+					<span>Skills:</span> React.js, HTML5, Javascript (+ES6), JQuery, CSS3, APIs, Responsive Development, Web Accessibility
+				</p>
+				<p class="tools wrapper__small profile">
+					<span>Tools:</span> Git & GitHub, Gulp, Sass, Sublime Text 3, Atom.io, Firebase, Command Line, Node.js & NPM
+				</p>
+			</div>
+		</div>
 	</section>
 	<div class="projects__fullbleed">
 		<section id="projects" class="wrapper__small
@@ -45,30 +54,36 @@
 			<p class="subheading">My favorite pieces</p>
 			<div class="projects">
 				<div class="project">
-					<a class="hexLink" href="http://markwilkins.co/projectTwo"><div class="hexagon hexagon1">
-						<div class="hexTop"></div>
-						<div class="hexBottom"></div>
-					</div></a>
+					<a class="hexLink" href="http://markwilkins.co/projectTwo">
+						<div class="hexagon hexagon1">
+							<div class="hexTop"></div>
+							<div class="hexBottom"></div>
+						</div>
+					</a>
 					<div>
 						<h3><a href="http://markwilkins.co/projectTwo">PSD Conversion</a></h3>
 						<p>A Photoshop Document converted into HTML & CSS</p>
 					</div>
 				</div>
 				<div class="project">
-					<a class="hexLink" href="http://markwilkins.co/projectFour"><div class="hexagon hexagon2">
-						<div class="hexTop"></div>
-						<div class="hexBottom"></div>
-					</div></a>
+					<a class="hexLink" href="http://markwilkins.co/projectFour">
+						<div class="hexagon hexagon2">
+							<div class="hexTop"></div>
+							<div class="hexBottom"></div>
+						</div>
+					</a>
 					<div>
 						<h3><a href="http://markwilkins.co/projectFour">API Project</a></h3>
 						<p>An application that obtains data from an API based on user input.</p>
 					</div>
 				</div>
 				<div class="project">
-					<a class="hexLink" href="https://enrichment-tracking-app.firebaseapp.com/"><div class="hexagon hexagon3">
-						<div class="hexTop"></div>
-						<div class="hexBottom"></div>
-					</div></a>
+					<a class="hexLink" href="https://enrichment-tracking-app.firebaseapp.com/">
+						<div class="hexagon hexagon3">
+							<div class="hexTop"></div>
+							<div class="hexBottom"></div>
+						</div>
+					</a>
 					<div>
 						<h3><a href="https://enrichment-tracking-app.firebaseapp.com/">React Project</a></h3>
 						<p>An Application for dog management within an animal shelter</p>
@@ -102,47 +117,22 @@
 				</div>
 			</div>
 		</div>
-		<button class="seeMore__skills">Show Details</button>
-		<div class="wrapper__small otherSkills">
-			<ul>
-				<h3>Skills:</h3>
-				<li>React.js</li>
-				<li>HTML5</li>
-				<li>Javascript (+ES6)</li>
-				<li>JQuery</li>
-				<li>CSS3</li>
-				<li>APIs</li>
-				<li>Responsive Development</li>
-				<li>Web Accessibility</li>
-			</ul>
-			<ul>
-				<h3>Tools:</h3>
-				<li>Git & GitHub</li>
-				<li>Gulp</li>
-				<li>Sass</li>
-				<li>Sublime Text 3</li>
-				<li>Atom.io</li>
-				<li>Firebase</li>
-				<li>Command Line</li>
-				<li>Node.js & NPM</li>
-			</ul>
-		</div>
 	</section>
 	<section id="contact" class="contactMe">
 		<h2>Contact Me</h2>
 		<p class="subheading">Let's get in touch</p>
 		<div class="contactFlexWrapper wrapper__small">
 			<div class="contactMethod contactMethod1">
-				<i class="fa fa-phone-square"></i>
-				<p>Cell: <a href="tel:555-555-5555">647-402-5501</a></p>
+				
+				<p><i class="fa fa-phone-square"></i> <a href="tel:555-555-5555">647-402-5501</a></p>
 			</div>
 			<div class="contactMethod contactMethod2">
-				<i class="fa fa-envelope"></i>
-				<p>Email: <a href="mailto:contactme@markwilkins.co?Subject=Hello!" target="_top">ContactMe@markwilkins.co</a></p>
+				
+				<p><i class="fa fa-envelope"></i> <a href="mailto:contactme@markwilkins.co?Subject=Hello!" target="_top">ContactMe@markwilkins.co</a></p>
 			</div>
 			<div class="contactMethod contactMethod3">
-				<i class="fa fa-linkedin-square"></i>
-				<p>Linkedin: <a href="https://www.linkedin.com/in/markwilkinsweb/">MarkWilkinsWeb</a></p>
+				
+				<p><i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/markwilkinsweb/">MarkWilkinsWeb</a></p>
 			</div>
 		</div>
 	</section>

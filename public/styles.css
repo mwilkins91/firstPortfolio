@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto; }
 
 .wrapper__small {
-  max-width: 780px;
+  max-width: 900px;
   margin: 0 auto; }
 
 .hex:before {
@@ -417,9 +417,35 @@ nav {
     padding: 5px 0;
     text-transform: uppercase; }
 
+@media all and (min-width: 770px) {
+  #aboutMe .aboutContent {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #aboutMe .aboutContent .text {
+      max-width: 40%;
+      padding: 0 40px; }
+    #aboutMe .aboutContent p.profile {
+      text-align: left;
+      padding: 0;
+      margin: 15px 0; }
+    #aboutMe .aboutContent span {
+      font-weight: bold; }
+    #aboutMe .aboutContent img {
+      margin: 0;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
+      -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+              clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); } }
+
 #skills {
   background: #0b9444;
-  padding: 50px 0 80px; }
+  padding: 50px 0 150px; }
   #skills h2 {
     margin: 0;
     color: white;
@@ -579,37 +605,47 @@ nav {
     color: white;
     text-decoration: none;
     border-bottom: 1px solid #151515;
-    -webkit-transition: border 1s;
-    transition: border 1s; }
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    border-bottom-color: white; }
     .projects a:not(.hexLink):hover {
-      border-bottom-color: white; }
+      color: #0b9444; }
 
-@media all and (min-width: 771px) {
-  .project {
-    width: 33.3333%; } }
-
-@media all and (max-width: 770px) {
-  .project {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0 40px; }
-    .project:nth-of-type(even) {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: row-reverse;
-              flex-direction: row-reverse; }
-    .project div {
-      -ms-flex-item-align: center;
-          -ms-grid-row-align: center;
-          align-self: center; } }
-
-@media all and (max-width: 580px) {
-  .project {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 20px 0; } }
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media all and (min-width: 771px) {
+    .project {
+      width: 33.3333%; } }
+  @media all and (max-width: 770px) {
+    .project {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 0 40px; }
+      .project:nth-of-type(even) {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse; }
+      .project div {
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center; } }
+  @media all and (max-width: 580px) {
+    .project {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 20px 0; } }
 
 .contactMe {
   text-align: center;
@@ -631,22 +667,21 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
   .contactFlexWrapper i {
-    font-size: 9rem; }
+    font-size: 3rem;
+    margin-right: 5px; }
   .contactFlexWrapper .contactMethod {
     width: 33.3333%; }
     .contactFlexWrapper .contactMethod p {
       font-weight: bolder;
       font-family: "Montserrat", sans-serif;
-      color: #0b9444; }
-      @media all and (max-width: 770px) {
-        .contactFlexWrapper .contactMethod p {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column; } }
+      color: #0b9444;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
     .contactFlexWrapper .contactMethod a {
       color: black;
       font-weight: normal;
