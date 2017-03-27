@@ -1,0 +1,81 @@
+#skills {
+	background: $logoGreen;
+	padding: 50px 0 80px;
+	h2 {
+		margin: 0;
+		color: white;
+		font-size: $headerSize;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+	.subHeading {
+		margin: 0;
+		color: $black;
+		font-size: $subHeaderSize;
+		margin-bottom: 20px;
+		@media all and (max-width: 770px){
+			text-align: center;
+			padding: 0 20px;
+		}
+	}
+	button {
+		display: block;
+		margin: 150px auto 20px;
+		width: 200px;
+		background: $black;
+		color: white;
+		font-family: $opensans;
+		border: none;
+		font-weight: bold;
+		font-size: 2rem;
+		padding: 15px 0;
+		text-transform: uppercase;
+		transition: color 0.3s, background 0.3s;
+		&:hover {
+			background: white;
+			color: black;
+		}
+	}
+}
+
+.hexContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	p:not(.subHeading) {
+		text-align: center;
+		margin: 0;
+		line-height: 120px;
+	}
+	i {
+		font-size: 8rem;
+		color: white;
+		line-height: 120px;
+		@media all and (max-width: 770px){
+			line-height: 86.60px;
+
+		}
+	}
+}
+
+.otherSkills {
+	margin-top: 100px;
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	ul {
+		padding: 0;
+		margin: 0;
+		width: 50%;
+	}
+	text-align: center;
+	li {
+		list-style: none;
+	}
+	h3 {
+		color: white;
+		font-size: $headerSize;
+		margin: 0;
+	}
+}

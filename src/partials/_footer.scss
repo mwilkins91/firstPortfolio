@@ -1,0 +1,72 @@
+.footer__fullBleed {
+	// background: url('./assets/footerbg.jpg');
+	background-position: center;
+	background-size: 100%;
+}
+.footer__overlay {
+	padding: 20px 0 10px;
+	background: #070707;
+}
+footer {
+	display: flex;
+	justify-content: space-around;
+	.nameCopy {
+		p {
+			margin: 0;
+			color: white;
+			text-transform: uppercase;
+			font-family: $headingFont;
+			span {
+				color: $logoGreen;
+			}
+		}
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.logo {
+		height: 80px;
+		border-radius: 50%;
+		position: relative;
+		z-index: 19;
+	}
+	.logoWrap {
+		position: relative;
+	}
+	.logoWrap:after {
+		transform: translate(-50%, -50%);
+		content: '';
+		position: absolute;
+		top: 48%;
+		left: 50%;
+		width: 60px;
+		height: 60px;
+		background: white;
+		border-radius: 50%;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		li {
+			margin: 5px;
+		}
+		a {
+			background: white;
+			border-radius: 50%;
+			line-height: 35px;
+			text-align: center;
+			display: block;
+			width: 35px;
+			height: 35px;
+			color: #070707;
+			transition: color 0.3s;
+			&:hover {
+				color: $logoGreen;
+			}
+		}
+	}
+}

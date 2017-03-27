@@ -1,0 +1,28 @@
+$headingFont: 'Montserrat', sans-serif;
+$opensans: 'Open Sans', sans-serif;
+$quicksand: 'Quicksand', sans-serif;
+$logoGreen: #0b9444;
+$black: #151515;
+$headerSize: 3.5rem;
+$subHeaderSize: 2.5rem;
+$bodySize: 1.6rem;
+html {
+	font-size: 62.5%;
+}
+
+body {
+		font-family: $opensans;
+		font-size: $bodySize;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $headingFont;
+}
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.wrapper__small {
+	max-width: 780px;
+	margin: 0 auto;
+}

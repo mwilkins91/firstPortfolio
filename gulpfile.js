@@ -13,9 +13,10 @@ const concat = require('gulp-concat');
 
 
 gulp.task('js', () => {
-	browserify('src/app.js')
+	browserify('src/app.js', {debug: true})
 		.transform('babelify', {
-			presets: ['es2015', 'react']
+			sourceMaps: true,
+			presets: ['es2015']
 		})
 		.bundle()
 		.on('error', notify.onError({

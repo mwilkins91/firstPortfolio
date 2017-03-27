@@ -1,0 +1,124 @@
+$hexMargin: 10px;
+$hexTopMargin: calc(60px + 20px);
+.hex:before {
+	content: " ";
+	width: 0;
+	height: 0;
+	border-bottom: 60px solid $black;
+	border-left: 104px solid transparent;
+	border-right: 104px solid transparent;
+	position: absolute;
+	top: -60px;
+	@media all and (max-width: 770px){
+		border-left: 75px solid transparent;
+		border-right: 75px solid transparent;
+	}
+}
+
+.hex {
+	float: left;
+	width: 208px;
+	height: 120px;
+	background-color: $black;
+	position: relative;
+	margin: $hexTopMargin $hexMargin 0;
+	@media all and (max-width: 770px) {
+		width: 150px;
+		height: 86.60px;
+	}
+}
+
+.hex:after {
+	content: "";
+	width: 0;
+	position: absolute;
+	bottom: -60px;
+	border-top: 60px solid $black;
+	border-left: 104px solid transparent;
+	border-right: 104px solid transparent;
+	@media all and (max-width: 770px){
+		border-left: 75px solid transparent;
+		border-right: 75px solid transparent;
+	}
+}
+
+//image hexigons
+.hexagon {
+	position: relative;
+	width: 250px;
+	height: 144.34px;
+	margin: 72.17px 0;
+	background-size: auto 288.6751px;
+	background-position: center;
+}
+
+.hexagon1 {
+	background-image: url('./assets/proj1.jpg');
+}
+
+.hexagon2 {
+	background-image: url('./assets/proj2.jpg');
+}
+
+.hexagon3 {
+	background-image: url('./assets/proj3.jpg');
+}
+
+.hexTop,
+.hexBottom {
+	position: absolute;
+	z-index: 1;
+	width: 176.78px;
+	height: 176.78px;
+	overflow: hidden;
+	-webkit-transform: scaleY(0.5774) rotate(-45deg);
+	-ms-transform: scaleY(0.5774) rotate(-45deg);
+	transform: scaleY(0.5774) rotate(-45deg);
+	background: inherit;
+	left: 36.61px;
+}
+
+
+/*counter transform the bg image on the caps*/
+
+.hexTop:after,
+.hexBottom:after {
+	content: "";
+	position: absolute;
+	width: 250.0000px;
+	height: 144.33756729740645px;
+	-webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-72.1688px);
+	-ms-transform: rotate(45deg) scaleY(1.7321) translateY(-72.1688px);
+	transform: rotate(45deg) scaleY(1.7321) translateY(-72.1688px);
+	-webkit-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	transform-origin: 0 0;
+	background: inherit;
+}
+
+.hexTop {
+	top: -88.3883px;
+}
+
+.hexTop:after {
+	background-position: center top;
+}
+
+.hexBottom {
+	bottom: -88.3883px;
+}
+
+.hexBottom:after {
+	background-position: center bottom;
+}
+
+.hexagon:after {
+	content: "";
+	position: absolute;
+	top: 0.0000px;
+	left: 0;
+	width: 250.0000px;
+	height: 144.3376px;
+	z-index: 2;
+	background: inherit;
+}

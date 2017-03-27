@@ -1,0 +1,49 @@
+#aboutMe {
+	header {
+		background: $logoGreen;
+		width: 100%;
+		h2 {
+			color: white;
+			font-size: $headerSize;
+			text-transform: uppercase;
+			font-weight: bold;
+			padding: 35px 0;
+			text-align: center;
+		}
+	}
+	h3 {
+		margin-top: 40px;
+		color: $logoGreen;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: $headerSize;
+	}
+	.subheading {
+		color: $black;
+		text-align: center;
+		font-size: $subHeaderSize;
+	}
+	img {
+		margin: 40px auto 0;
+		display: block;
+	}
+	.profile {
+		text-align: center;
+		color: #818181;
+		margin-top: 20px;
+		padding: 10px 80px;
+	}
+	button {
+		display: block;
+		margin: 20px auto 65px;
+		width: 80px;
+		background: $black;
+		color: white;
+		font-family: $opensans;
+		border: none;
+		font-weight: bold;
+		font-size: 2rem;
+		padding: 5px 0;
+		text-transform: uppercase;
+	}
+}

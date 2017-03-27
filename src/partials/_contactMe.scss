@@ -1,0 +1,44 @@
+
+.contactMe {
+	text-align: center;
+	padding: 40px 0 100px;
+	h2 {
+		font-size: $headerSize;
+		margin-bottom: 0;
+		color: $logoGreen;
+	}
+	.subheading {
+		color: $black;
+		text-align: center;
+		font-size: $subHeaderSize;
+		margin-top: 0;
+	}
+}
+.contactFlexWrapper {
+	display: flex;
+	justify-content: space-around;
+	i {
+		font-size: 9rem;
+	}
+	.contactMethod {
+		width: 33.3333%;
+		p {
+			font-weight: bolder;
+			font-family: $headingFont;
+				color: $logoGreen;
+			@media all and (max-width: 770px){
+				display: flex;
+				flex-direction: column;
+			}
+		}
+		a {
+			color: black;
+			font-weight: normal;
+			font-family: $opensans;
+			transition: color 0.3s;
+			&:hover {
+				color: $logoGreen;
+			}
+		}
+	}
+}

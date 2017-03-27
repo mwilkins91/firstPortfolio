@@ -1,22 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> PUT A TITLE HERE </title>
+	<title> Mark Wilkins - Front-End Web Development </title>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="public/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,600|Quicksand:700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
 </head>
+
 <body>
-
-<!-- Best of luck, Mark! -->
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script src="public/scripts.js"></script>	
+	<section class="hero">
+		<header>
+			<h1><span>Mark</span> Wilkins</h1>
+			<p>Front-End Web Development</p>
+		</header>
+	</section>
+	<nav>
+		<ul class="wrapper__small">
+			<li><a href="#aboutMe">About Me</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#contact">Contact Me</a></li>
+		</ul>
+	</nav>
+	<section id="aboutMe">
+		<header>
+			<h2 class="wrapper__small">About Me</h2>
+		</header>
+		<h3 class="wrapper__small">Mark Wilkins</h3>
+		<p class="wrapper__small subheading">Front-End Web Developer</p>
+		<img class="wrapper__small" src="./public/assets/mwilkins.jpg" alt="">
+		<p class="wrapper__small profile">I am a front-end web developer skilled in developing dynamic data driven applications using React, Jquery, or Vanilla JavaScript. I work well under pressure, and I never fail to deliver high quality work as efficiently as possible.</p>
+		<p class="wrapper__small profile">I am seeking employment with a team that would benefit from the addition of my skillset, and allow me to continue to both hone my existing skills, as well as develop new ones.</p>
+		<button>More</button>
+	</section>
+	<div class="projects__fullbleed">
+		<section id="projects" class="wrapper__small
+		">
+			<h2>Portfolio</h2>
+			<p class="subheading">My favorite pieces</p>
+			<div class="projects">
+				<div class="project">
+					<a class="hexLink" href="http://markwilkins.co/projectTwo"><div class="hexagon hexagon1">
+						<div class="hexTop"></div>
+						<div class="hexBottom"></div>
+					</div></a>
+					<div>
+						<h3><a href="http://markwilkins.co/projectTwo">PSD Conversion</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, qui!</p>
+					</div>
+				</div>
+				<div class="project">
+					<a class="hexLink" href="http://markwilkins.co/projectFour"><div class="hexagon hexagon2">
+						<div class="hexTop"></div>
+						<div class="hexBottom"></div>
+					</div></a>
+					<div>
+						<h3><a href="http://markwilkins.co/projectFour">API Project</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, qui!</p>
+					</div>
+				</div>
+				<div class="project">
+					<a class="hexLink" href="https://enrichment-tracking-app.firebaseapp.com/"><div class="hexagon hexagon3">
+						<div class="hexTop"></div>
+						<div class="hexBottom"></div>
+					</div></a>
+					<div>
+						<h3><a href="https://enrichment-tracking-app.firebaseapp.com/">React Project</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, qui!</p>
+					</div>
+				</div>
+			</div>
+			<!-- <button class="seeMore">Want to see more?</button> -->
+		</section>
+	</div>
+	<section id="skills">
+		<div class="wrapper__small hexContainer">
+			<h2>Skills and Tools</h2>
+			<p class="subHeading">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			<div class="clearfix hex-row skills">
+				<div class="hex hex1">
+					<p><i class="devicon-react-original-wordmark"></i></p>
+				</div>
+				<div class="hex hex2">
+					<p><i class="devicon-sass-original"></i></p>
+				</div>
+				<div class="hex hex3">
+					<p class=""><i class="devicon-jquery-plain-wordmark"></i></p>
+				</div>
+			</div>
+			<div class="clearfix hex-row even skills">
+				<div class="hex hex4">
+					<p><i class="devicon-gulp-plain"></i></p>
+				</div>
+				<div class="hex hex5">
+					<p><i class="devicon-git-plain-wordmark"></i></p>
+				</div>
+			</div>
+		</div>
+		<button class="seeMore__skills">Show Details</button>
+		<div class="wrapper__small otherSkills">
+			<ul>
+				<h3>Skills:</h3>
+				<li>React.js</li>
+				<li>HTML5</li>
+				<li>Javascript (+ES6)</li>
+				<li>JQuery</li>
+				<li>CSS3</li>
+				<li>APIs</li>
+				<li>Responsive Development</li>
+				<li>Web Accessibility</li>
+			</ul>
+			<ul>
+				<h3>Tools:</h3>
+				<li>Git & GitHub</li>
+				<li>Gulp</li>
+				<li>Sass</li>
+				<li>Sublime Text 3</li>
+				<li>Atom.io</li>
+				<li>Firebase</li>
+				<li>Command Line</li>
+				<li>Node.js & NPM</li>
+			</ul>
+		</div>
+	</section>
+	<section id="contact" class="contactMe">
+		<h2>Contact Me</h2>
+		<p class="subheading">Let's get in touch</p>
+		<div class="contactFlexWrapper wrapper__small">
+			<div class="contactMethod contactMethod1">
+				<i class="fa fa-phone-square"></i>
+				<p>Cell: <a href="tel:555-555-5555">647-402-5501</a></p>
+			</div>
+			<div class="contactMethod contactMethod2">
+				<i class="fa fa-envelope"></i>
+				<p>Email: <a href="mailto:contactme@markwilkins.co?Subject=Hello!" target="_top">ContactMe@markwilkins.co</a></p>
+			</div>
+			<div class="contactMethod contactMethod3">
+				<i class="fa fa-linkedin-square"></i>
+				<p>Linkedin: <a href="https://www.linkedin.com/in/markwilkinsweb/">MarkWilkinsWeb</a></p>
+			</div>
+		</div>
+	</section>
+	<div class="footer__fullBleed">
+		<div class="footer__overlay">
+			<footer class="wrapper">
+				<div class="nameCopy">
+					<p><span>Mark</span> Wilkins &copy; 2017</p>
+				</div>
+				<div class="logoWrap">
+					<img class="logo" src="./public/assets/logo.svg" alt="" />
+				</div>
+				<ul class="socials">
+					<li>
+						<a href="https://twitter.com/MarkWilkinsWeb"><i class="fa fa-twitter"></i></a>
+					</li>
+					<li>
+						<a href="https://github.com/mwilkins91"><i class="fa fa-github"></i></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/markwilkinsweb/"><i class="fa fa-linkedin"></i></a>
+					</li>
+					<li>
+						<a href="mailto:contactme@markwilkins.co?Subject=Hello!" target="_top"><i class="fa fa-envelope"></i></a>
+					</li>
+				</ul>
+			</footer>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="/public/app.js"></script>
 </body>
+
 </html>

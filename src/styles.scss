@@ -1,3 +1,14 @@
-body { 
-	background: rebeccapurple;
-}
+@import 'partials/normalize.scss';
+@import 'partials/global.scss';
+@import 'partials/hexagon';
+@import 'partials/heroHeader';
+@import 'partials/nav';
+@import 'partials/aboutMe';
+@import 'partials/skills';
+@import 'partials/projects';
+@import 'partials/contactMe';
+@import 'partials/footer';
+
+
+
+
