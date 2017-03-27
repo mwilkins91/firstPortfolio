@@ -3,8 +3,6 @@ nav {
 	ul {
 		list-style: none;
 		padding: 0;
-		display: flex;
-		justify-content: space-around;
 	}
 	a {
 		display: block;
@@ -20,5 +18,47 @@ nav {
 			background: $logoGreen;
 			color: white;
 		}
+	}
+}
+
+@media all and (min-width: 581px) {
+	button {
+		display: none;
+	}
+	nav {
+		ul {
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+}
+
+@media all and (max-width: 580px) {
+	nav {
+		text-align: center;
+	}
+	button {
+		text-align: center;
+		width: 100%;
+		border: none;
+		background: white;
+		display: block;
+		padding: 20px;
+		font-size: 2rem;
+		font-family: $opensans;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: $black;
+		text-decoration: none;
+		transition: color 0.3s, background 0.3s;
+		font-size: 3rem;
+		&:hover {
+			background: $logoGreen;
+			color: white;
+		}
+
+	}
+	ul {
+		display: none;
 	}
 }

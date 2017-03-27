@@ -40,6 +40,9 @@
 	}
 	.hexagon {
 		margin-bottom: 90px;
+		@media all and (max-width: 580px){
+			margin: 0;
+		}
 	}
 	h3 {
 		text-align: center;
@@ -64,6 +67,9 @@
 }
 
 .project {
+	@media all and (min-width: 771px){
+		width: 33.3333%;
+	}
 	@media all and (max-width: 770px){
 		display: flex;
 		padding: 0 40px;
@@ -74,5 +80,8 @@
 			align-self: center;
 		}
 	}
-
+	@media all and (max-width: 580px){
+		align-items: center;
+		margin: 20px 0;
+	}
 }

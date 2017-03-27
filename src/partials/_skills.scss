@@ -7,6 +7,7 @@
 		font-size: $headerSize;
 		text-transform: uppercase;
 		letter-spacing: 2px;
+		text-align: center;
 	}
 	.subHeading {
 		margin: 0;
@@ -53,7 +54,14 @@
 		line-height: 120px;
 		@media all and (max-width: 770px){
 			line-height: 86.60px;
-
+		}
+		@media all and (max-width: 770px){
+			line-height: 57.73px;
+			position: relative;
+			z-index: 999;
+		}
+		@media all and (max-width: 580px){
+		font-size: 7rem;
 		}
 	}
 }
@@ -68,6 +76,13 @@
 		padding: 0;
 		margin: 0;
 		width: 50%;
+		@media all and (max-width: 580px){
+			width: 100%;
+			display: block;
+			&:last-of-type {
+				margin-top: 60px;
+			}
+		}
 	}
 	text-align: center;
 	li {
@@ -77,5 +92,8 @@
 		color: white;
 		font-size: $headerSize;
 		margin: 0;
+	}
+	@media all and (max-width: 580px){
+		flex-direction: column;
 	}
 }

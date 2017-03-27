@@ -18,6 +18,11 @@ portfolio.events = function() {
 			}
 		}
 	});
+	$('nav button').on('click', function(event) {
+		event.preventDefault();
+		/* Act on the event */
+		$('nav ul').slideToggle('fast');
+	});
 }
 
 portfolio.possibleIconArray = [
@@ -41,7 +46,8 @@ portfolio.getFiveRandomNumbers = function() {
 		let randoNum = Math.floor(Math.random() * (portfolio.possibleIconArray.length - 1 + 1)) + 0;
 		let unique = true;
 		randoNums.forEach((num) => {
-			if (num === randoNum) unique = false })
+			if (num === randoNum) unique = false
+		})
 		if (portfolio.previousNums[(randoNums.length - 1)] === randoNum) {
 			unique = false;
 		}
