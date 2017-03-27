@@ -27,12 +27,15 @@
 	img {
 		margin: 40px auto 0;
 		display: block;
+		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
 	}
 	.profile {
 		text-align: center;
 		color: #818181;
 		margin-top: 20px;
 		padding: 10px 80px;
+		line-height: 2rem;
 		@media all and (max-width: 580px){
 			padding: 10px 20px
 		}
@@ -73,7 +76,6 @@
 		img {
 			margin: 0;
 			align-self: center;
-			clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 		}
 	}
 }

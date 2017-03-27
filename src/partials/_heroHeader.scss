@@ -1,15 +1,20 @@
 .hero {
 	height: 100vh;
-	background-image: url('/public/assets/hero.jpg');
-	background-size: 100% 100%;
-	@media all and (max-width: 580px){
+	background-color: #151515;
+
+	position: relative;
+	@media all and (max-width: 580px) {
 		background-size: 200% 100%;
 		background-position: center;
 	}
 	header {
-		background: rgba(0, 0, 0, 0.5);
+		// background: rgba(0, 0, 0, 0.5);
 		text-align: center;
 		padding: 65px 0;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
 		p {
 			color: white;
 			margin: 0;
