@@ -35,7 +35,17 @@
 		color: #818181;
 		margin-top: 20px;
 		padding: 10px 80px;
-		line-height: 2rem;
+		line-height: 2.3rem;
+		a {
+			color: #818181;
+			// color: black;
+			font-weight: normal;
+			font-family: $opensans;
+			transition: color 0.3s;
+			&:hover {
+				color: $logoGreen;
+			}
+		}
 		@media all and (max-width: 580px){
 			padding: 10px 20px
 		}

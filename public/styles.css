@@ -481,7 +481,15 @@ nav {
     color: #818181;
     margin-top: 20px;
     padding: 10px 80px;
-    line-height: 2rem; }
+    line-height: 2.3rem; }
+    #aboutMe .profile a {
+      color: #818181;
+      font-weight: normal;
+      font-family: "Open Sans", sans-serif;
+      -webkit-transition: color 0.3s;
+      transition: color 0.3s; }
+      #aboutMe .profile a:hover {
+        color: #0b9444; }
     @media all and (max-width: 580px) {
       #aboutMe .profile {
         padding: 10px 20px; } }
