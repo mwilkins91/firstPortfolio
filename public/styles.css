@@ -359,8 +359,9 @@ h1, h2, h3, h4, h5, h6 {
       height: 57.7350px; } }
 
 .hero {
-  height: 100vh;
-  background-color: #151515;
+  height: 90vh;
+  background-image: url("./assets/Hero.jpg");
+  background-size: 100%;
   position: relative; }
   @media all and (max-width: 580px) {
     .hero {
@@ -369,15 +370,21 @@ h1, h2, h3, h4, h5, h6 {
   .hero header {
     text-align: center;
     padding: 65px 0;
+    height: 100%;
+    width: 100%;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+    top: 0;
+    background: rgba(0, 0, 0, 0.4); }
     .hero header p {
       color: white;
       margin: 0;
       font-size: 1.6rem; }
+  .hero .headerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
   .hero h1 {
     margin: 0;
     text-transform: uppercase;
@@ -686,7 +693,7 @@ nav {
       justify-content: space-around; }
   .contactFlexWrapper i {
     font-size: 3rem;
-    margin-right: 5px; }
+    margin-bottom: 15px; }
   .contactFlexWrapper .contactMethod {
     width: 33.3333%; }
     .contactFlexWrapper .contactMethod p {

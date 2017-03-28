@@ -1,9 +1,9 @@
 .hero {
-	height: 100vh;
-	background-color: #151515;
-
+	height: 90vh;
+	background-image: url('./assets/Hero.jpg');
+	background-size: 100%;
 	position: relative;
-	@media all and (max-width: 580px) {
+	@media all and (max-width: 580px){
 		background-size: 200% 100%;
 		background-position: center;
 	}
@@ -11,15 +11,22 @@
 		// background: rgba(0, 0, 0, 0.5);
 		text-align: center;
 		padding: 65px 0;
+		height: 100%;
+		width: 100%;
 		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
+		top: 0;
+		background: rgba(0,0,0,0.4);
 		p {
 			color: white;
 			margin: 0;
 			font-size: 1.6rem;
 		}
+	}
+	.headerText {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 	h1 {
 		margin: 0;
