@@ -272,12 +272,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 72.17px 0;
   background-size: auto 288.6751px;
   background-position: center; }
-  @media all and (max-width: 580px) {
-    .hexagon {
-      width: 100px;
-      height: 57.74px;
-      margin: 28.87px 0;
-      background-size: auto 115.4701px; } }
 
 .hexagon1 {
   background-image: url("./assets/proj1.jpg"); }
@@ -299,12 +293,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: scaleY(0.5774) rotate(-45deg);
   background: inherit;
   left: 36.61px; }
-  @media all and (max-width: 580px) {
-    .hexTop,
-    .hexBottom {
-      width: 70.71px;
-      height: 70.71px;
-      left: 14.64px; } }
 
 /*counter transform the bg image on the caps*/
 .hexTop:after,
@@ -318,28 +306,15 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
   background: inherit; }
-  @media all and (max-width: 580px) {
-    .hexTop:after,
-    .hexBottom:after {
-      width: 100.0000px;
-      height: 57.73502691896258px;
-      -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-28.8675px);
-      transform: rotate(45deg) scaleY(1.7321) translateY(-28.8675px); } }
 
 .hexTop {
   top: -88.3883px; }
-  @media all and (max-width: 580px) {
-    .hexTop {
-      top: -35.3553px; } }
 
 .hexTop:after {
   background-position: center top; }
 
 .hexBottom {
   bottom: -88.3883px; }
-  @media all and (max-width: 580px) {
-    .hexBottom {
-      bottom: -35.3553px; } }
 
 .hexBottom:after {
   background-position: center bottom; }
@@ -353,10 +328,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 144.3376px;
   z-index: 2;
   background: inherit; }
-  @media all and (max-width: 580px) {
-    .hexagon:after {
-      width: 100.0000px;
-      height: 57.7350px; } }
 
 .hero {
   height: 90vh;
@@ -645,7 +616,7 @@ nav {
   @media all and (min-width: 771px) {
     .project {
       width: 33.3333%; } }
-  @media all and (max-width: 770px) {
+  @media all and (max-width: 770px) and (min-width: 580px) {
     .project {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -678,7 +649,20 @@ nav {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin: 20px 0; } }
+      margin: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .project .hexagon {
+        margin: 110px 0 70px; }
+      .project p {
+        padding: 0 40px; } }
+  .project .liveLinks {
+    font-size: 2rem; }
+    .project .liveLinks a {
+      border: none;
+      margin: 5px; }
 
 .contactMe {
   text-align: center;
@@ -700,7 +684,7 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
   .contactFlexWrapper i {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 15px; }
   .contactFlexWrapper .contactMethod {
     width: 33.3333%; }

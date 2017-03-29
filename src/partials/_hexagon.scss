@@ -154,12 +154,12 @@
 	margin: 72.17px 0;
 	background-size: auto 288.6751px;
 	background-position: center;
-	@media all and (max-width: 580px) {
-		width: 100px;
-		height: 57.74px;
-		margin: 28.87px 0;
-		background-size: auto 115.4701px;
-	}
+	// @media all and (max-width: 580px) {
+	// 	width: 100px;
+	// 	height: 57.74px;
+	// 	margin: 28.87px 0;
+	// 	background-size: auto 115.4701px;
+	// }
 }
 
 .hexagon1 {
@@ -186,11 +186,11 @@
 	transform: scaleY(0.5774) rotate(-45deg);
 	background: inherit;
 	left: 36.61px;
-	@media all and (max-width: 580px) {
-		width: 70.71px;
-		height: 70.71px;
-		left: 14.64px;
-	}
+	// @media all and (max-width: 580px) {
+	// 	width: 70.71px;
+	// 	height: 70.71px;
+	// 	left: 14.64px;
+	// }
 }
 
 
@@ -209,20 +209,20 @@
 	-ms-transform-origin: 0 0;
 	transform-origin: 0 0;
 	background: inherit;
-	@media all and (max-width: 580px) {
-		width: 100.0000px;
-		height: 57.73502691896258px;
-		-webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-28.8675px);
-		-ms-transform: rotate(45deg) scaleY(1.7321) translateY(-28.8675px);
-		transform: rotate(45deg) scaleY(1.7321) translateY(-28.8675px);
-	}
+	// @media all and (max-width: 580px) {
+	// 	width: 100.0000px;
+	// 	height: 57.73502691896258px;
+	// 	-webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-28.8675px);
+	// 	-ms-transform: rotate(45deg) scaleY(1.7321) translateY(-28.8675px);
+	// 	transform: rotate(45deg) scaleY(1.7321) translateY(-28.8675px);
+	// }
 }
 
 .hexTop {
 	top: -88.3883px;
-	@media all and (max-width: 580px) {
-		top: -35.3553px;
-	}
+	// @media all and (max-width: 580px) {
+	// 	top: -35.3553px;
+	// }
 }
 
 .hexTop:after {
@@ -231,9 +231,9 @@
 
 .hexBottom {
 	bottom: -88.3883px;
-	@media all and (max-width: 580px) {
-		bottom: -35.3553px;
-	}
+	// @media all and (max-width: 580px) {
+	// 	bottom: -35.3553px;
+	// }
 }
 
 .hexBottom:after {
@@ -249,8 +249,8 @@
 	height: 144.3376px;
 	z-index: 2;
 	background: inherit;
-	@media all and (max-width: 580px) {
-		width: 100.0000px;
-		height: 57.7350px;
-	}
+	// @media all and (max-width: 580px) {
+	// 	width: 100.0000px;
+	// 	height: 57.7350px;
+	// }
 }

@@ -74,7 +74,7 @@
 	@media all and (min-width: 771px) {
 		width: 33.3333%;
 	}
-	@media all and (max-width: 770px) {
+	@media all and (max-width: 770px) and (min-width: 580px) {
 		display: flex;
 		padding: 0 40px;
 		flex-direction: row;
@@ -99,6 +99,20 @@
 	}
 	@media all and (max-width: 580px) {
 		align-items: center;
-		margin: 20px 0;
+		margin:0;
+		flex-direction: column;
+		.hexagon {
+			margin: 110px 0 70px;
+		}
+		p {
+			padding:0 40px;
+		}
+	}
+	.liveLinks {
+		a {
+			border: none;
+			margin: 5px;
+		}
+		font-size: 2rem;
 	}
 }
