@@ -610,6 +610,17 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 20px; }
+  @media all and (max-width: 770px) and (min-width: 580px) {
+    .projects.singleItem .project:nth-of-type(odd) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; }
+      .projects.singleItem .project:nth-of-type(odd) p,
+      .projects.singleItem .project:nth-of-type(odd) h3 {
+        text-align: right;
+        margin-right: 15px;
+        text-align: right; } }
 
 .project {
   display: -webkit-box;

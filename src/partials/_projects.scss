@@ -71,6 +71,17 @@
 .projects.singleItem {
 	justify-content: center;
 	margin-top: 20px;
+	@media all and (max-width: 770px) and (min-width: 580px) {
+		.project:nth-of-type(odd) {
+			flex-direction: row-reverse;
+			p,
+			h3 {
+			text-align: right;
+				margin-right: 15px;
+				text-align: right;
+			}
+		}
+	}
 }
 
 .project {
