@@ -282,6 +282,9 @@ h1, h2, h3, h4, h5, h6 {
 .hexagon3 {
   background-image: url("./assets/proj3.jpg"); }
 
+.hexagon4 {
+  background-image: url("./assets/PhaserGif.gif"); }
+
 .hexTop,
 .hexBottom {
   position: absolute;
@@ -601,6 +604,12 @@ nav {
     border-bottom-color: white; }
     .projects a:not(.hexLinkMine):hover {
       color: #0b9444; }
+
+.projects.singleItem {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px; }
 
 .project {
   display: -webkit-box;

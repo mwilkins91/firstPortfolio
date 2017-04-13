@@ -28,6 +28,7 @@
 	}
 }
 
+
 .projects__fullbleed {
 	background: $black;
 }
@@ -65,6 +66,11 @@
 			color: $logoGreen;
 		}
 	}
+}
+
+.projects.singleItem {
+	justify-content: center;
+	margin-top: 20px;
 }
 
 .project {
